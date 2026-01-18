@@ -1,6 +1,6 @@
 .site-header {
   background-color: rgba(0, 0, 0, 0);
-  
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,13 +25,13 @@
 }
 
 .box-icon {
-   border: 1px solid transparent;
-   cursor: pointer;
-   position: relative;
+  border: 1px solid transparent;
+  cursor: pointer;
+  position: relative;
 
-   display: flex;
-   align-items: center;
-   justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .box-icon:hover {
@@ -42,4 +42,15 @@
 .user-icon {
   padding: 0 3px;
   height: 16px;
+}
+
+@media (min-width: 600px) {
+  .logo {
+    height: 80px
+  }
+
+  .user-icon {
+    padding: 0 3px;
+    height: 18px;
+  }
 }

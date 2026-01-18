@@ -15,7 +15,7 @@ function HomePage() {
       }}>
          <div className="bg-overlay">
           <div className="top-overlay">
-            <p className="title">Welcome to the Science Lab</p>
+            <p className="title">Welcome to Plotting the science</p>
 
             <Link to="/plotting">
               <button className="plot-button">
