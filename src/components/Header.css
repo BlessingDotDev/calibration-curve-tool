@@ -12,6 +12,19 @@
   z-index: 1000;
 }
 
+.plotting-header {
+    background-color: rgb(10, 161, 43);
+}
+
+.plotting-header .logo {
+  position: fixed;
+  top: -5px;
+}
+
+.plotting-header .box-icon {
+  margin: 10px 0;
+}
+
 .logo {
   height: 50px
 }

@@ -7,17 +7,15 @@ function PlottingPage() {
     <>
       <title>Plotting</title>
 
-      <Header />
+      <Header varient="plotting" />
 
-      <h1>Welcome to the plottingting page</h1>
-
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, unde eos explicabo quidem obcaecati consequuntur quisquam delectus temporibus quod voluptatum eligendi similique consectetur ratione dolorum quibusdam sint distinctio, optio cumque?
-      </p>
+      <main className="main-container">
+        <p className="plot-title">Plot-sci</p>
 
       <Link to="/">
        <button>GO back home</button>
       </Link>
+      </main>
 
     </>
   );
