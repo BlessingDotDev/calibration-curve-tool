@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import Header from "../../components/Header";
+import Swiper from "../../components/Swiper";
 import "./HomePage.css";
 import bg from "../../assets/react.svg"
 
