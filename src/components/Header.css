@@ -1,9 +1,43 @@
 .site-header {
-  background-color: darkblue;
+  background-color: rgba(10, 10, 80, 0.694);
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.309);
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 10px
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.icon-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.box-icon {
+   border: 1px solid transparent;
+   cursor: pointer;
+   position: relative;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.box-icon:hover {
+  border: 1px solid rgba(255, 255, 255, 0.436);
+  border-radius: 5px;
+}
+
+.user-icon {
+  padding: 0 3px;
+  height: 16px;
 }

@@ -1,0 +1,54 @@
+.background-image-container {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+}
+
+.bg-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-color: rgba(27, 8, 76, 0.895);
+  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin: 10px;
+  letter-spacing: 3px;
+  pointer-events: none;
+}
+
+.plot-button {
+  background-color: rgba(0, 0, 0, 0.452);
+  border: 1px solid white;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  cursor: pointer;
+
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.plot-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.plot-button:active {
+  background-color: black;
+  color: white;
+}

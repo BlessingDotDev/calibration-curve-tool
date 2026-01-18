@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import Header from "../../components/Header";
 import "./HomePage.css";
+import bg from "../../assets/react.svg"
 
 function HomePage() {
   return (
@@ -8,16 +9,24 @@ function HomePage() {
       <title> Calibration Curve</title>
 
       <Header />
-      
-      <h1> Welcome to the Home Page </h1>
 
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo sed, eveniet laudantium cumque asperiores at obcaecati tenetur ex maxime fugit deleniti nobis ipsam, sapiente quis omnis fuga! Fugiat, vel fugit?
-      </p>
+      <div className="background-image-container" style={{
+        backgroundImage: `url(${bg})`
+      }}>
+         <div className="bg-overlay">
+          <div className="top-overlay">
+            <p className="title">Welcome to the Science Lab</p>
 
-      <Link to="/plotting">
-        <button>Plot Graph</button>
-      </Link>
+            <Link to="/plotting">
+              <button className="plot-button">
+                Plot Graph
+              </button>
+            </Link>
+          </div>
+
+         </div>
+      </div>
+
     </>
   );
 }
