@@ -52,3 +52,15 @@
   background-color: black;
   color: white;
 }
+
+@media (min-width: 600px) {
+  .title {
+    font-size: 25px;
+  }
+
+  .plot-button {
+    font-size: 15px;
+    padding: 6px 15px;
+   border-radius: 30px;
+  }
+}

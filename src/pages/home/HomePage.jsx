@@ -13,7 +13,7 @@ function HomePage() {
       <div className="background-image-container" style={{
         backgroundImage: `url(${bg})`
       }}>
-         <div className="bg-overlay">
+        <div className="bg-overlay">
           <div className="top-overlay">
             <p className="title">Welcome to Plotting the science</p>
 
@@ -23,8 +23,7 @@ function HomePage() {
               </button>
             </Link>
           </div>
-
-         </div>
+        </div>
       </div>
 
     </>
