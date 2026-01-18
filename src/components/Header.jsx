@@ -1,4 +1,5 @@
 import "./Header.css";
+import logo from "../assets/images/logo/plot-sci.png";
 import menuIcon from "../assets/images/icons/menu.svg";
 import userIcon from "../assets/images/icons/user.svg";
 
@@ -6,9 +7,7 @@ import userIcon from "../assets/images/icons/user.svg";
 function Header() {
   return (
     <header className="site-header">
-      <button>
-        logo
-      </button>
+      <img className="logo" src={logo} alt="" />
 
       <nav className="icon-section">
         <div className="box-icon">
