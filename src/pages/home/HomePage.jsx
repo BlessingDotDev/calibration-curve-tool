@@ -1,8 +1,8 @@
 import { Link } from "react-router";
 import Header from "../../components/Header";
 import "./HomePage.css";
-//import bg from "../../assets/images/bg-images/beakerss.jpg"
-import bg from "../../assets/images/logo/plot-sci.png"
+import bg from "../../assets/images/bg-images/beakerss.jpg"
+//import bg from "../../assets/images/logo/plot-sci.png"
 
 function HomePage() {
   return (

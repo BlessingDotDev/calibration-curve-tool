@@ -10,6 +10,8 @@
   left: 0;
   right: 0;
   z-index: 1000;
+
+  padding-right: 20px;
 }
 
 .plotting-header {
@@ -26,7 +28,7 @@
 }
 
 .logo {
-  height: 50px
+  height: 80px
 }
 
 .icon-section {
@@ -57,9 +59,25 @@
   height: 16px;
 }
 
+.icon {
+  font-size: 35px;
+  padding: 5px;
+  color: rgb(255, 166, 33);
+}
+
 @media (min-width: 600px) {
   .logo {
-    height: 80px
+    height: 100px
+  }
+
+  .user-icon {
+    padding: 0 3px;
+    height: 18px;
+  }
+}
+@media (min-width: 800px) {
+  .logo {
+    height: 120px
   }
 
   .user-icon {

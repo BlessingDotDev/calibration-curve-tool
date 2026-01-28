@@ -14,11 +14,11 @@ function Header({varient}) {
 
       <nav className="icon-section">
         <div className="box-icon">
-          <img className="user-icon" src={userIcon} alt="user-icon" />
+          <i className="bx bx-user icon"></i>
         </div>
 
         <div className="box-icon">
-          <img className="user-icon" src={menuIcon} alt="menu-icon" />
+          <i className="bx bx-menu icon" ></i>
         </div>
       </nav>
     </header>
