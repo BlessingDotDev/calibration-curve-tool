@@ -26,9 +26,13 @@
   margin: 10px 0;
 }
 
+.plotting-header .icon {
+  color: black;
+}
+
 .logo {
   height: 80px;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 .icon-section {
@@ -49,9 +53,8 @@
   justify-content: center;
 }
 
-.box-icon:hover {
-  border: 1px solid rgba(255, 255, 255, 0.436);
-  border-radius: 5px;
+.box-icon:hover .icon {
+  opacity: 0.8;
 }
 
 .user-icon {
