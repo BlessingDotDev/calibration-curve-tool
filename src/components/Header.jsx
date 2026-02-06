@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import "./Header.css";
-import logo from "../assets/images/logo/plot-sci.png";
+import logo from "../assets/images/logo/logo.png";
 import menuIcon from "../assets/images/icons/menu.svg";
 import userIcon from "../assets/images/icons/user.svg";
 
