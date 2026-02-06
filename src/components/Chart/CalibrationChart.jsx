@@ -1,10 +1,11 @@
 // components/CalibrationChart.jsx
-import React, { useRef, forwardRef, useImperativeHandle } from "react";
+import React, { useRef, forwardRef, useImperativeHandle, Fragment } from "react";
 import { Scatter } from "react-chartjs-2";
 import { Button } from "@mui/material";
 import { Chart as ChartJS, LinearScale, PointElement, LineElement, Tooltip, Legend } from "chart.js";
 import PropTypes from "prop-types";
 import { saveAs } from "file-saver";
+import "./CalibrationChart.css";
 
 ChartJS.register(LinearScale, PointElement, LineElement, Tooltip, Legend);
 
@@ -49,12 +50,12 @@ const CalibrationChart = forwardRef(
     };
 
     return (
-      <>
+      <div className="calibration-curve">
         <Scatter ref={chartRef} data={chartData} options={options} />
         <Button sx={{ mt: 2 }} variant="contained" onClick={handleDownload}>
           Download Chart
         </Button>
-      </>
+      </div>
     );
   }
 );

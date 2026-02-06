@@ -62,19 +62,20 @@ const AppContent = () => {
 
     <Container className="main-container" sx={{ my: 4 }}>
       <Header varient="plotting" />
-      <Link to="/">
-        <button>GO back home</button>
-      </Link>
 
-      <Box display="flex" justifyContent="space-between" alignItems="center">
-        <Typography variant="h4">Professional Calibration Tool</Typography>
+      <Box display="flex" className="title-name" justifyContent="space-between" alignItems="center">
+        <Typography variant="h5">Professional Calibration Tool</Typography>
         <IconButton onClick={toggleColorMode}>
           <Brightness4Icon />
         </IconButton>
       </Box>
 
+         <Button className="download-button" variant="contained" onClick={handlePdf}>
+        Download PDF Report
+      </Button>
+
       {/* Units + PDF button */}
-      <Box sx={{ display: "flex", gap: 2, mt: 2 }}>
+      <Box className="units-box" sx={{ display: "flex", gap: 2, mt: 2 }}>
         <FormControl size="small" sx={{ minWidth: 180 }}>
           <InputLabel>X Unit</InputLabel>
           <Select value={xUnit} label="X Unit" onChange={(e) => setXUnit(e.target.value)}>
@@ -94,15 +95,11 @@ const AppContent = () => {
             <MenuItem value="Fluorescence Intensity">Fluorescence</MenuItem>
           </Select>
         </FormControl>
-
-        <Button variant="contained" onClick={handlePdf}>
-          Download PDF Report
-        </Button>
       </Box>
 
       <DataTable data={data} setData={setData} xUnit={xUnit} yUnit={yUnit} />
 
-      <CalibrationChart
+      <CalibrationChart 
         ref={chartRef}
         filteredPoints={filtered}
         regressionLine={regressionLine}
@@ -113,6 +110,7 @@ const AppContent = () => {
         yUnit={yUnit}
       />
 
+   
       <UnknownSamplesTable
         samples={samples}
         setSamples={setSamples}
@@ -121,6 +119,7 @@ const AppContent = () => {
         xUnit={xUnit}
         yUnit={yUnit}
       />
+
     </Container>
   );
 };

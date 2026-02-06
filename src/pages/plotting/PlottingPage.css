@@ -1,18 +1,23 @@
 .main-container {
   padding-top: 80px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   min-height: 100;
 }
 
-.plot-title {
-  font-size: 14px;
+.title-name {
+  margin-bottom: 20px;
+}
+
+.units-box {
+  padding-top: 10px;
 }
 
 @media (min-width: 600px) {
   .main-container {
-    padding-top: 80px;
+    padding-top: 120px;
     padding-right: 20px;
     padding-left: 20px;
   }
+
 }
