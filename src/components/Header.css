@@ -19,7 +19,7 @@
   /*
     /background-color: rgba(35, 80, 23, 0.842);
     */
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .plotting-header .box-icon {
@@ -78,11 +78,8 @@
     height: 18px;
   }
 }
-@media (min-width: 800px) {
-  .logo {
-    height: 120px
-  }
 
+@media (min-width: 800px) {
   .user-icon {
     padding: 0 3px;
     height: 18px;
