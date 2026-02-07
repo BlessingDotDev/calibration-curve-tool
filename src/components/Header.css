@@ -16,9 +16,6 @@
 }
 
 .plotting-header {
-  /*
-    /background-color: rgba(35, 80, 23, 0.842);
-    */
   background-color: rgb(255, 255, 255);
 }
 
@@ -68,6 +65,26 @@
   color: rgb(255, 166, 33);
 }
 
+.link-section {
+  display: none;
+}
+
+.link-section .link .cali-button{
+  font-size: 14px;
+  color: white;
+  font-family: sans-serif;
+  background-color: rgb(53, 53, 238);
+  border: none;
+  font-weight: bold;
+  padding: 15px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cali-button:hover {
+  opacity: .8;
+}
+
 @media (min-width: 600px) {
   .logo {
     height: 100px
@@ -76,6 +93,14 @@
   .user-icon {
     padding: 0 3px;
     height: 18px;
+  }
+
+  .icon-section {
+    display: none;
+  }
+
+  .link-section {
+    display: initial;
   }
 }
 
