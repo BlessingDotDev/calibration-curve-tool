@@ -1,33 +1,5 @@
-/*.swiper-container {
-  min-height: 100vh;
-}
-
-.slide-content {
-  margin-top: 100px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.image {
-  height: 100% ;
-  width: 100% ;
-  object-fit: contain;
-  object-position: center;
-}
-
-.slide-content h2 {
-  text-align: center;
-}
-
-*/
-.background-image-container {
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  position: relative;
+.swiper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

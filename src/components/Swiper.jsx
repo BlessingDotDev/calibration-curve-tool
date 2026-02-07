@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import { bgImages } from "../data/image-data.js";
+import { messages } from "../data/messages.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Swiper.css';
@@ -17,18 +17,12 @@ export function Swiper() {
     arrow: false,
   }
 
-  bgImages.forEach((i) => {
-    console.log(i.image)
-  });
-
   return (
     <Slider {...settings} className="swiper-container">
-      {bgImages.map((image) => (
-        <div key={image.id}
-            className="slide-content background-image-container" style={{
-            backgroundImage: `url(${image.image})`
-          }}>
-        </div>
+      {messages.map((message) => (
+        <p key={message.id} className="title">
+          {message.message}
+        </p>
       ))}
     </Slider>
   );
