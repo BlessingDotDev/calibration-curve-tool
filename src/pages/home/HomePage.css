@@ -23,12 +23,14 @@
 }
 
 .title {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
   color: white;
   margin: 10px;
   letter-spacing: 3px;
+  line-height: 40px;
   pointer-events: none;
+  max-width: 400px;
 }
 
 .plot-button {
@@ -36,9 +38,10 @@
   border: 2px solid rgb(255, 166, 33);
   color: white;
   font-size: 20px;
-  padding: 5px 10px;
+  padding: 5px 16px;
   border-radius: 30px;
   cursor: pointer;
+  margin-top: 32px;
 
   transition: background-color 0.15s, color 0.15s;
 }
@@ -51,28 +54,4 @@
 .plot-button:active {
   background-color: black;
   color: white;
-}
-
-@media (min-width: 600px) {
-  .title {
-    font-size: 35px;
-  }
-
-  .plot-button {
-    font-size: 30px;
-    padding: 6px 15px;
-   border-radius: 30px;
-  }
-}
-
-@media (min-width: 800px) {
-  .title {
-    font-size: 45px;
-  }
-
-  .plot-button {
-    font-size: 35px;
-    padding: 8px 20px;
-   border-radius: 30px;
-  }
 }
