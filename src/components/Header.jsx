@@ -6,7 +6,16 @@ function Header({ varient }) {
   return (
     <header className={`site-header ${varient}-header`}>
       <Link to="/">
+      <div className="logo-section">
         <img className="logo" src={logo} alt="" />
+
+        <p className="logo-name">
+           Plot 
+           <span className="logo-halfname">
+            Sci
+          </span>
+        </p>
+      </div>
       </Link>
 
       <nav className="link-section">

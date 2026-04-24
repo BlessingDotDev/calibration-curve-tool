@@ -11,25 +11,36 @@
   right: 0;
   z-index: 1000;
 
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 8px 16px;
 }
 
 .plotting-header {
   background-color: rgb(255, 255, 255);
 }
 
-.plotting-header .box-icon {
-  margin: 10px 0;
-}
-
 .plotting-header .icon {
   color: black;
 }
 
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .logo {
-  height: 80px;
-  margin-top: 3px;
+  height: 35px;
+}
+
+.logo-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(108, 108, 246);
+}
+
+.logo-halfname {
+  color: rgb(182, 167, 138);
+  margin-left: 8px;
 }
 
 .icon-section {
@@ -51,7 +62,7 @@
 }
 
 .box-icon:hover .icon {
-  opacity: 0.8;
+  color: rgb(212, 199, 173);
 }
 
 .user-icon {
@@ -60,9 +71,10 @@
 }
 
 .icon {
-  font-size: 35px;
+  font-size: 24px;
   padding: 5px;
-  color: rgb(255, 166, 33);
+  /*color: rgb(255, 166, 33);*/
+  color: rgb(182, 167, 138)
 }
 
 .link-section {
@@ -86,6 +98,7 @@
 }
 
 @media (min-width: 600px) {
+  /*
   .logo {
     height: 100px
   }
@@ -102,11 +115,14 @@
   .link-section {
     display: initial;
   }
+    */
 }
 
 @media (min-width: 800px) {
+  /*
   .user-icon {
     padding: 0 3px;
     height: 18px;
   }
+    */
 }
