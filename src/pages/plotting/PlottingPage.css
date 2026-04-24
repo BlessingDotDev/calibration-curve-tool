@@ -1,21 +1,25 @@
 .main-container {
-  padding-top: 80px;
+  padding-top: 60px;
   padding-right: 20px;
   padding-left: 20px;
   min-height: 100;
 }
 
 .title-name {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .units-box {
   padding-top: 10px;
 }
 
+.download-btn-box {
+  margin-left: 16px;
+  margin-top: 100px;
+}
+
 @media (min-width: 600px) {
   .main-container {
-    padding-top: 120px;
     padding-right: 20px;
     padding-left: 20px;
   }

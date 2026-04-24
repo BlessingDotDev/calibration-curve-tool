@@ -65,14 +65,12 @@ const AppContent = () => {
 
       <Box display="flex" className="title-name" justifyContent="space-between" alignItems="center">
         <Typography variant="h5">Professional Calibration Tool</Typography>
+        {/*
         <IconButton onClick={toggleColorMode}>
           <Brightness4Icon />
         </IconButton>
+        */}
       </Box>
-
-         <Button className="download-button" variant="contained" onClick={handlePdf}>
-        Download PDF Report
-      </Button>
 
       {/* Units + PDF button */}
       <Box className="units-box" sx={{ display: "flex", gap: 2, mt: 2 }}>
@@ -119,6 +117,15 @@ const AppContent = () => {
         xUnit={xUnit}
         yUnit={yUnit}
       />
+
+      <div className="download-btn-box">
+        <Button 
+          className="download-button" variant="contained" 
+          onClick={handlePdf}
+        >
+          Download PDF Report
+        </Button>
+      </div>
 
     </Container>
   );
