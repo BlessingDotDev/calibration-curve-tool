@@ -97,6 +97,37 @@
   opacity: .8;
 }
 
+.menu {
+  position: fixed;
+  top: 50px;
+
+  width: 200px;
+  height: 80%;
+  background-color: rgb(26, 80, 56);
+  border-radius: 5px;;
+  padding: 10px 0 0 10px;
+}
+
+
+.menu-title {
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.367);
+}
+
+.menu-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.m-icon {
+  font-size: 24px;
+  padding: 5px;
+  color: rgb(233, 233, 233)
+}
+
 @media (min-width: 600px) {
   /*
   .logo {

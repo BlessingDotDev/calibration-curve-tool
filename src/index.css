@@ -13,3 +13,8 @@ a {
 ul {
   list-style: none;
 }
+
+p {
+  color: white;
+  letter-spacing: 1.5px;
+}
