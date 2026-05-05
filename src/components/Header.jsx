@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router";
 import "./Header.css";
+import Button from "../UIcomponents/Button";
 import logo from "../assets/images/logo/logo.png";
 
 function Header({ varient }) {
@@ -41,17 +42,37 @@ function Header({ varient }) {
         {
           menuOpen && (
             <div className="menu">
-              <p className="menu-title">Menu</p>
+              <div className="title-section">
+                <p className="menu-title">Menu</p>
+                <i 
+                  onClick={() => setMenuOpen(!menuOpen)}
+                  className="bx bx-x x-icon"></i>
+              </div>
 
-              <div >
+              <div className="mobile-nav-links" >
+                <Link to="/" className="menu-row">
+                  <i className="bx bx-user m-icon"></i>
+                  <p>Login</p>
+                </Link>
                 <Link to="/" className="menu-row">
                   <i className="bx bx-home m-icon"></i>
                   <p>Home</p>
                 </Link>
+                <Link to="/" className="menu-row">
+                  <i className="bx bx-data m-icon"></i>
+                  <p>calibration tool</p>
+                </Link>
+              </div>
+
+              <div className="btn-section">
+                <Button />
               </div>
             </div>
-      )}
+          )}
       </nav>
+
+      {/* overlay */}
+      { menuOpen && <div className="menu-overlay"></div> }
     </header>
   );
 }

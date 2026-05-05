@@ -1,8 +1,10 @@
-import { Link } from "react-router";
+
 import Header from "../../components/Header";
+import Features from "../../UIcomponents/Features";
+import Footer from "../../UIcomponents/Footer";
+import Button from "../../UIcomponents/Button"
+import bg from "../../assets/images/bg-images/beakerss.jpg";
 import "./HomePage.css";
-import bg from "../../assets/images/bg-images/beakerss.jpg"
-//import bg from "../../assets/images/logo/plot-sci.png"
 
 function HomePage() {
   return (
@@ -18,14 +20,13 @@ function HomePage() {
           <div className="top-overlay">
             <p className="title">Welcome to graphing the science</p>
 
-            <Link to="/plotting">
-              <button className="plot-button">
-                Plot Graph
-              </button>
-            </Link>
+            <Button />
           </div>
         </div>
       </div>
+
+      <Features />
+      <Footer />
 
     </>
   );

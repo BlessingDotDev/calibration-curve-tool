@@ -81,7 +81,7 @@
   display: none;
 }
 
-.link-section .link .cali-button{
+.link-section .link .cali-button {
   font-size: 14px;
   color: white;
   font-family: sans-serif;
@@ -99,33 +99,68 @@
 
 .menu {
   position: fixed;
-  top: 50px;
+  top: 0px;
+  right: 0;
 
-  width: 200px;
-  height: 80%;
-  background-color: rgb(26, 80, 56);
-  border-radius: 5px;;
-  padding: 10px 0 0 10px;
+  width: 70%;
+  height: auto;
+  background-color: rgba(9, 9, 9, 0.751);
+  border-radius: 10px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  z-index: 100;
 }
 
+.title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.367);
+}
 
 .menu-title {
-  letter-spacing: 2px;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.367);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.x-icon {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-nav-links {
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .menu-row {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 10px;
 }
 
 .m-icon {
   font-size: 24px;
   padding: 5px;
-  color: rgb(233, 233, 233)
+  color: rgb(255, 166, 33);
+}
+
+.btn-section {
+  text-align: center;
+}
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.196);
 }
 
 @media (min-width: 600px) {
