@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import "./Header.css";
 import Button from "../UIcomponents/Button";
@@ -6,9 +6,24 @@ import logo from "../assets/images/logo/logo.png";
 
 function Header({ varient }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
+    }
+
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    
+  }, [])
 
   return (
-    <header className={`site-header ${varient}-header`}>
+    <header className={`${scrolled ? 'scrolled-header' : 'site-header'} ${varient}-header `}>
       <Link to="/">
         <div className="logo-section">
           <img className="logo" src={logo} alt="" />
@@ -44,7 +59,7 @@ function Header({ varient }) {
             <div className="menu">
               <div className="title-section">
                 <p className="menu-title">Menu</p>
-                <i 
+                <i
                   onClick={() => setMenuOpen(!menuOpen)}
                   className="bx bx-x x-icon"></i>
               </div>
@@ -72,7 +87,7 @@ function Header({ varient }) {
       </nav>
 
       {/* overlay */}
-      { menuOpen && <div className="menu-overlay"></div> }
+      {menuOpen && <div className="menu-overlay"></div>}
     </header>
   );
 }

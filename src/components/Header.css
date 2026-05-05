@@ -1,17 +1,24 @@
-.site-header {
-  background-color: rgba(0, 0, 0, 0);
-
+.site-header,
+.scrolled-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-
+  
   padding: 8px 16px;
+}
+
+.site-header {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.scrolled-header {
+  background-color: rgb(250, 255, 255);
 }
 
 .plotting-header {
